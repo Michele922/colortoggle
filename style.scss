@@ -11,9 +11,9 @@
   .btn-navbar {
     width: 60px;
     height: 100%;
-    background-image: url(/images/menu.jpg);
+    background-image: url(/images/menu.png);
     background-repeat: no-repeat;
-    background-size: 40px;
+    background-size: 60px;
     background-position: center;
     cursor: pointer;
   }
@@ -21,9 +21,39 @@
 
 .nav-sidebar {
   position: fixed;
+  top: 10%;
   left: 0;
+  z-index: 1000;
+  list-style-type: none;
+  padding-left: 0;
+  visibility: hidden;
 
-  ul {
-    list-style-type: none;
+  .btn-sidebar {
+    width: 300px;
+    height: 40px;
+    border: solid transparent;
+    transition: 1s;
+    cursor: pointer;
+
+    &:hover {
+    }
+  }
+  .btn-red {
+    background-color: red;
+  }
+  .btn-orange {
+    background-color: orange;
+  }
+  .btn-yellow {
+    background-color: yellow;
+  }
+  .btn-green {
+    background-color: green;
+  }
+  .btn-blue {
+    background-color: blue;
+  }
+  .btn-violet {
+    background-color: violet;
   }
 }
