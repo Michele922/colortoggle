@@ -1,4 +1,8 @@
-.nav-main {
+body {
+  cursor: pointer;
+}
+
+.nav-bar {
   position: fixed;
   top: 0;
   width: 100%;
@@ -7,7 +11,7 @@
   flex-wrap: wrap;
   z-index: 1000;
 }
-.nav-main .btn-navbar {
+.nav-bar .button {
   width: 60px;
   height: 100%;
   background-image: url(/images/menu.png);
@@ -17,37 +21,37 @@
   cursor: pointer;
 }
 
-.nav-sidebar {
+.sidebar {
   position: fixed;
   top: 10%;
   left: 0;
   z-index: 1000;
   list-style-type: none;
   padding-left: 0;
-  visibility: hidden;
+  display: none;
 }
-.nav-sidebar .btn-sidebar {
+.sidebar .btn-sidebar {
   width: 300px;
   height: 40px;
   border: solid transparent;
   transition: 1s;
   cursor: pointer;
 }
-.nav-sidebar .btn-red {
+.sidebar .btn-red {
   background-color: red;
 }
-.nav-sidebar .btn-orange {
+.sidebar .btn-orange {
   background-color: orange;
 }
-.nav-sidebar .btn-yellow {
+.sidebar .btn-yellow {
   background-color: yellow;
 }
-.nav-sidebar .btn-green {
+.sidebar .btn-green {
   background-color: green;
 }
-.nav-sidebar .btn-blue {
+.sidebar .btn-blue {
   background-color: blue;
 }
-.nav-sidebar .btn-violet {
+.sidebar .btn-violet {
   background-color: violet;
 }/*# sourceMappingURL=style.css.map */

@@ -17,3 +17,27 @@
 //     }
 //   }
 // };
+
+let isNavVisible = false;
+
+const menu = document.querySelector(".nav-bar"),
+  button = document.querySelector(".button"),
+  dropdown = document.querySelector(".sidebar"),
+  sideBarLinks = document.querySelector(".btn-sidebar");
+
+button.addEventListener("mouseover", () => {
+  dropdown.style.display = "block";
+});
+
+//hide the menu bar
+document.addEventListener("click", () => {
+  dropdown.style.display = "none";
+});
+
+// //Close menu when clicking outside
+// document.addEventListener("click", function (event) {
+//   if (event.target !== menu && !menu.contains(event.target)) {
+//     //hide the menu
+//     classie.removeClass(sideBar, "sideBar-active");
+//   }
+// });
