@@ -18,26 +18,56 @@
 //   }
 // };
 
-let isNavVisible = false;
-
 const menu = document.querySelector(".nav-bar"),
   button = document.querySelector(".button"),
   dropdown = document.querySelector(".sidebar"),
-  sideBarLinks = document.querySelector(".btn-sidebar");
+  sideBarLinks = document.querySelector(".btn-sidebar"),
+  red = document.querySelector(".btn-red"),
+  orange = document.querySelector(".btn-orange"),
+  yellow = document.querySelector(".btn-yellow"),
+  green = document.querySelector(".btn-green"),
+  blue = document.querySelector(".btn-blue"),
+  violet = document.querySelector(".btn-violet");
 
 button.addEventListener("mouseover", () => {
   dropdown.style.display = "block";
 });
 
 //hide the menu bar
-document.addEventListener("click", () => {
-  dropdown.style.display = "none";
+document.addEventListener("click", (event) => {
+  // console.log("is button clicked:", event.target == button);
+
+  if (event.target !== button) {
+    dropdown.style.display = "none";
+  }
 });
 
-// //Close menu when clicking outside
-// document.addEventListener("click", function (event) {
-//   if (event.target !== menu && !menu.contains(event.target)) {
-//     //hide the menu
-//     classie.removeClass(sideBar, "sideBar-active");
-//   }
-// });
+red.addEventListener("click", (event) => {
+  console.log("is red clicked:", event.target == red);
+  document.body.style.backgroundColor = "red";
+});
+
+orange.addEventListener("click", (event) => {
+  console.log("is orange clicked:", event.target == orange);
+  document.body.style.backgroundColor = "orange";
+});
+
+yellow.addEventListener("click", (event) => {
+  console.log("is orange clicked:", event.target == orange);
+  document.body.style.backgroundColor = "yellow";
+});
+
+green.addEventListener("click", (event) => {
+  console.log("is orange clicked:", event.target == orange);
+  document.body.style.backgroundColor = "green";
+});
+
+blue.addEventListener("click", (event) => {
+  console.log("is orange clicked:", event.target == orange);
+  document.body.style.backgroundColor = "blue";
+});
+
+violet.addEventListener("click", (event) => {
+  console.log("is orange clicked:", event.target == orange);
+  document.body.style.backgroundColor = "violet";
+});
