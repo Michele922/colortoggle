@@ -1,5 +1,7 @@
-body {
-  cursor: pointer;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
 .nav-bar {
@@ -7,7 +9,6 @@ body {
   height: 60px;
   display: flex;
   flex-wrap: wrap;
-  z-index: 1000;
   display: block;
 }
 .nav-bar .button {
@@ -17,42 +18,50 @@ body {
   background-repeat: no-repeat;
   background-size: 60px;
   background-position: center;
-  transition: all 0.2s;
+  transition: all 2s;
   cursor: pointer;
 }
 
 .sidebar {
-  position: fixed;
-  top: 10%;
-  left: 0;
-  z-index: 1000;
+  position: absolute;
+  margin-top: 10px;
+  width: 400px;
+  left: -400px;
   list-style-type: none;
   padding-left: 0;
-  display: none;
-  transition: all 0.8s cubic-bezier(0.15, 0.7, 0, 1);
+  display: block;
+  transition: left 0.5s ease-in-out;
 }
 .sidebar .btn-sidebar {
-  width: 300px;
+  width: 100%;
   height: 40px;
-  border: solid transparent;
-  transition: all 0.2s;
   cursor: pointer;
 }
-.sidebar .btn-red {
+
+.sidebar-is-open {
+  left: 0;
+}
+
+.background-red {
   background-color: red;
 }
-.sidebar .btn-orange {
+
+.background-orange {
   background-color: orange;
 }
-.sidebar .btn-yellow {
+
+.background-yellow {
   background-color: yellow;
 }
-.sidebar .btn-green {
+
+.background-green {
   background-color: green;
 }
-.sidebar .btn-blue {
+
+.background-blue {
   background-color: blue;
 }
-.sidebar .btn-violet {
+
+.background-violet {
   background-color: violet;
 }/*# sourceMappingURL=style.css.map */
